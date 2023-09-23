@@ -1,0 +1,25 @@
+.ctitle, .c-desc1 {
+    margin: 2.5rem;
+    text-align: justify;
+}
+
+.ctitle {
+    font-size: 1.4rem;
+}
+
+.c-desc1 {
+    font-size: 1.2rem;
+    margin-top: -1rem;
+    padding-left: 2rem;
+}
+
+.costdemodetails {
+    position: absolute;
+    top: 3rem;
+    left: 40rem;
+    display: flex;
+}
+
+.costdemodetails div {
+    margin-right: 5rem;
+}

@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    font-family: 'Open Sans', sans-serif;
+    user-select: none;
+}
+
+.nav-menu {
+    width: 20vw;
+    max-height: 100vh;
+    background: #FFFFFE;
+    box-shadow: 0px 0px 5px 0px rgba(158, 161, 176, 1);
+    position: fixed;
+    top: 0;
+    height: 100%;
+    bottom: inherit;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.body-contents {
+    width: 82vw;
+    background: #F5F4F8;
+    height: 100vh;
+    margin-left: 18vw;
+}
+
+/* Nav-Menu Styling */
+
+.nav-menu {
+    padding: 0 18px;
+}
+
+.nav-header {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    padding-top: 15px;
+}
+
+.nav-logo {
+    display: flex;
+}
+
+.nav-logo img {
+    height: 40px;
+}
+
+.nav-logo-title {
+    margin: auto 15px auto;
+    font-weight: 700;
+    font-size: 25px;
+    color: #555;
+}
+
+/* Navigation-links */
+
+li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.nav-links {
+    margin: 20px 10px;
+    height: 100vh;
+}
+
+.listed-menu li {
+    padding: 15px 10px;
+    margin: 10px 0;
+    border: 1px solid #696CFF;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.listed-menu li i {
+    padding-right: 8px;
+}
+
+.listed-menu li.active {
+    background: #E7E7FF;
+    border-left: 5px solid #696CFF;
+}
+
+.listed-menu li.active:hover {
+    background: #E7E7FF !important;
+}
+
+.listed-menu a {
+    color: #000;
+    text-decoration: none !important;
+}
+
+.listed-menu a li:hover {
+    background: #f8f8f9;
+    color: #000;
+}
+
+.angle-dwn-lister {
+    display: block;
+    float: right;
+}
+
+/* Sublists */
+
+.sub-list-student {
+    padding-top: 10px;
+    display: none;
+}
+
+.sub-list-student li {
+    border: none;
+    padding: 8px 5px;
+    margin: 10px 0;
+}
+
+.sub-list-student li i {
+    color: #909090;
+    padding-right: 8px;
+}
+
+.sub-list-student li:hover {
+    color: #808080;
+}
+
+.nl-mlarge:hover {
+    background: none !important;
+}
+
+/* JS - Function modifier css */
+.mypr-exp.downed {
+    display: block;
+}
+
+.mypr-expicon.downed {
+    transform: rotate(90deg);
+    padding-top: 15px;
+    position: relative;
+    z-index: -1;
+}
+
+
+
+/* WEBKIT SCROLLBARS */
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #b9b8b8;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #808080;
+    cursor: pointer;
+}
+
+
+/*WEBKIT SCROLLBARS*/

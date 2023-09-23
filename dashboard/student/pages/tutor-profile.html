@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">`
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutor Profile</title>
+    <!-- Sources -->
+    <link rel="stylesheet" href="../css/include0.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="css/tutor-profile.css">
+    <script src="js/navbar.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" crossorigin="anonymous"></script>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../../../public/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../../../public/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../../public/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../../../public/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../../public/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../../../public/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../../../public/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../../public/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../public/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../../../public/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../public/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../../../public/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../public/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../../public/images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../../../public/images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <div class="main-container">
+
+        <!-- NavBar Starts -->
+        <div class="sidenav">
+            <div class="nav-menu">
+                <!-- Nav Header -->
+                <div class="nav-header">
+                    <div class="nav-logo">
+                        <img src="../../../public/images/favicon/favicon-96x96.png" />
+                        <div class="nav-logo-title">Skill-Lancer</div>
+                    </div> <br />
+                    <hr />
+                </div>
+
+                <!-- Nav-Links -->
+                <div class="nav-links">
+                    <ul class="listed-menu">
+                        <a href="dashboard.html">
+                            <li class="active">
+                                <i class="fa-regular fa-house"></i> Dashboard
+                            </li>
+                        </a>
+
+                        <li class="nl-mlarge curact">
+                            <span class="myp-exp">
+                                <i class="fa-regular fa-house"></i> My Courses
+                                <span class="angle-dwn-lister"><i
+                                        class="fa-regular fa-angle-right mypr-expicon downed"></i></span>
+                            </span>
+                            <ul class="sub-list-student mypr-exp downed">
+                                <a href="active-courses.html">
+                                    <li><i class="fa-regular fa-circle-dot"></i>Active Courses</li>
+                                </a>
+                                <a href="completed-courses.html">
+                                    <li><i class="fa-regular fa-circle-dot"></i>Completed Courses</li>
+                                </a>
+                                <a href="removed-courses.html">
+                                    <li><i class="fa-regular fa-circle-dot"></i>Removed Courses</li>
+                                </a>
+                            </ul>
+                        </li>
+
+                        <a href="unlocked.html">
+                            <li>
+                                <i class="fa-regular fa-user-group"></i> Interested Tutors
+                            </li>
+                        </a>
+                        <a href="out-enquiries.html">
+                            <li>
+                                <i class="fa-regular fa-list-dropdown"></i> My Enquires
+                            </li>
+                        </a>
+                        <a href="my-profile.html">
+                            <li>
+                                <i class="fa-regular fa-user-vneck"></i> My Profile
+                            </li>
+                        </a>
+                        <a href="dguide.html">
+                            <li>
+                                <i class="fa-regular fa-circle-info"></i> Dashboard Guide
+                            </li>
+                        </a>
+
+                        <div style="text-decoration: underline;margin-top: 15px;"><a style="color: #f14848;"
+                                href="report.html"><b>Report Issues</b></a></div>
+                    </ul>
+                </div>
+            </div>
+            <script>
+                //Expande Menu 1
+                $('.myp-exp').click(function () {
+                    $('.mypr-exp').toggleClass('downed');
+                    $('.mypr-expicon').toggleClass('downed');
+                    // $('.curact').toggleClass('active');
+                })
+            </script>
+        </div>
+        <!-- NavBar ends -->
+
+        <div class="contents">
+            <div class="all">
+                <div class="dash-header">
+                    <div style="margin-left: 1.5rem;font-size: 1.4rem;">
+                        <i class="fa-solid fa-magnifying-glass" style="color: #808080;font-weight: bold;"></i>
+                    </div>
+                    <div>
+                        <input type="search" name="search" autocomplete="off"
+                            placeholder="Search for Courses and Tutors"
+                            style="font-size: 1.4rem;width: 600px;border: none;outline: none;">
+                    </div>
+                    <div style="font-size:1em;font-weight:400;margin: auto 1em auto auto;display: flex;">
+                        <div style="width:2.5em;height:2.5em;margin: auto 10px auto 1em;border-radius: 50px;"><img
+                                style="width: 2.5em;height:2.5em"
+                                src="https://cdn-icons-png.flaticon.com/512/149/149071.png">
+                        </div>
+                        <div style="font-size: 1.5em; margin: auto 0; font-weight: 500">
+                            Deepak Kumar <span style="color: #808080">(Student)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="home-contents">
+                <div class="main-box-a">
+                    <div class="rec-add-courses" style="position: relative;">
+                        <div class="basic-details" style="margin: 0 1rem;">
+                            <p style="font-size: 2.2rem;font-weight: bold;">Chandramohan</p><br>
+                            <p style="color: #000;font-size: 1.8rem;">Web Development</p><br>
+                            <button class="viewbtn" style="width: 30%;">SEND PERSONAL ENQUIRY</button><br>
+                            <br>
+                            <hr style="margin: 0;"><br>
+                        </div>
+
+                        <div class="costdemodetails">
+                            <div>
+                                <p style="font-weight: bold;font-size: 1.3rem;">COURSE COST</p><br>
+                                <p style="font-size: 1.3rem;margin-left: 1rem;"><span>₹520</span>&nbsp;<span>Per
+                                        Hour</span>
+                                </p>
+                            </div><br>
+                            <div>
+                                <p style="font-weight: bold;font-size: 1.3rem;">DEMO AVAILABILITY</p><br>
+                                <p style="font-size: 1.3rem;margin-left: 1rem;">Not Available</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-box-a" style="box-shadow: none;margin: 0;padding: 0;">
+                        <div class="rec-add-courses">
+                            <p class="rac-title">COURSE DETAILS</p>
+                            <div class="ctitle">Course Description</div>
+                            <div class="c-desc1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+                                mollitia velit veniam nam quas modi doloribus autem quia soluta repellat!</div>
+
+                            <div class="ctitle">Course Lessons / Chapters</div>
+                            <div class="c-desc1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum sit
+                                iste saepe amet aut commodi! Velit id sed vel in eaque voluptatibus dolores recusandae
+                                hic excepturi ab tempore, reprehenderit iusto quam, culpa molestias ratione dolore fuga
+                                esse aut eveniet optio! Soluta animi, voluptatum veritatis alias voluptate magnam iste
+                                atque tempore.</div>
+
+                            <div class="ctitle">Course Sector / Field</div>
+                            <div class="c-desc1">IT</div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

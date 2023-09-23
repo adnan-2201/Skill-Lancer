@@ -1,0 +1,129 @@
+form {
+    box-shadow: 0px 3px 5px 0px rgba(158, 161, 176, 1);
+}
+
+#profiledisplayform {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+}
+
+.main-box-a {
+    box-shadow: none;
+}
+
+.pdform-header {
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: #e5e5e5;
+}
+
+/* FORM ELEMENTS  */
+
+.one-input {
+    margin: 15px;
+    position: relative;
+}
+
+.one-input label {
+    font-weight: 650;
+    font-size: 15px;
+}
+
+.one-input input, .one-input select, .one-input textarea {
+    padding: 12px 15px 12px 15px;
+    width: 400px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.one-input textarea {
+    min-width: 400px;
+    max-width: 400px;
+    min-height: 150px;
+    max-height: 200px;
+}
+
+.one-input input[type=file] {
+    display: none;
+}
+
+.one-input label[for=tpphoto] {
+    display: block;
+    width: max-content;
+    padding: 12px 15px;
+    margin-top: 10px;
+    border: 2px solid #000;
+    cursor: pointer;
+}
+
+#tpprofile-preview {
+    display: block;
+    position: absolute;
+    right: 150px;
+    top: 0;
+    margin-top: 10px;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    border: 2px solid #6e6e6e;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/149/149071.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.one-input input[type=submit] {
+    background-color: #000;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    width: max-content;
+    outline: none;
+}
+
+.one-input a {
+    font-weight: 700;
+    text-decoration: underline;
+    color: blue;
+    padding: 15px;
+}
+
+.one-input .lbl-icon {
+  position: absolute;
+  top: 50%;
+  margin-top: 5px;
+  font-weight: bold;
+  margin-left: 1rem;
+}
+
+.one-input input.lbl-icon-align {
+    padding: 12px 15px 12px 30px;
+}
+
+/* SMALL  */
+.one-input-flex {
+    display: flex;
+}
+
+.one-input-small {
+    margin: 0 15px 15px 15px;
+    position: relative;
+}
+
+.one-input-small label {
+    font-weight: 650;
+    font-size: 15px;
+}
+
+.one-input-small input, .one-input-small select, .one-input-small textarea {
+    padding: 12px 15px 12px 15px;
+    width: 190px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+
+/* FORM ELEMENTS STYLING ENDS  */

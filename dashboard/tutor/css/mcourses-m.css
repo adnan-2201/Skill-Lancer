@@ -1,0 +1,53 @@
+/* My Course Table  */
+.my-courses {
+    position: relative;
+}
+
+.tabletagstud {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    width: 90%;
+    background: #fff;
+    box-shadow: 0px 0px 5px 0px rgba(158, 161, 176, 1);
+}
+
+.tabletagstud tr {
+    border: 1px solid #19BDFF;
+}
+
+.tabletagstud th {
+    background-color: #19BDFF;
+}
+
+.tabletagstud th, .tabletagstud td {
+    /* border: 1px solid #000; */
+    padding: 12px;
+    height: 40px;
+    text-align: center;
+    line-height: 28px;
+}
+
+.manage-stud {
+    padding: 0.3em 0.5em;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9em;
+    color: #fff;
+    background-color: #10d247;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.addcrbtn {
+    margin-left: 50px;
+    padding: 0.5em 0.7em;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9em;
+    color: #fff;
+    background-color: #10d247;
+    font-weight: 600;
+    border-radius: 3px;
+}

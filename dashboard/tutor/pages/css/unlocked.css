@@ -1,0 +1,16 @@
+
+.stb-ul {
+    grid-template-columns: auto !important;
+}
+
+.std-prf, .std-prf img {
+    width: 7.5em !important;
+    height: 7.5em !important;
+    margin-right: 0.8em;
+}
+
+.btn-btm-ulp {
+    width: max-content !important;
+    margin: auto;
+    display: block;
+}

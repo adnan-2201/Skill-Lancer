@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Registration Page</title>
+  <style>
+body {
+      font-family: Arial, sans-serif;
+      background-color: #002633;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      width: 400px;
+      padding: 90px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: box-shadow 0.3s ease-in-out;
+      position: relative;
+      border: 1px solid #fff;
+    }
+
+    .container:hover {
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #004d66;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin: 5px;
+      font-weight: bold;
+      color: #000;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 15px 10px;
+      border: 2px solid #000;
+      /* border-radius: 4px; */
+      color: #333333;
+    }
+
+    .btn {
+      display: block;
+      width: 105%;
+      padding: 12px;
+      font-size: 16px;
+      text-align: center;
+      background-color: #000;
+      color: #ffffff;
+      border: none;
+      /* border-radius: 4px; */
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #006666;
+    }
+
+    p {
+      position: absolute;
+      display: block;
+      height: 40px;
+      top: 0;
+      left: 0;
+      width: 400px;
+      /* background-color: #000; */
+      color: #006666;
+      width: 100%;
+      font-weight: bolder;
+      font-size: 2rem;
+      text-align: center;
+      margin: auto auto !important;
+      padding: 15px 0px;
+      border-bottom: 1px solid #006666;
+      letter-spacing: 3px;
+    }
+    a {
+      color: blue;
+      font-weight: bold;
+    }
+    .logo {
+      position: absolute;
+      top: 2rem;
+      left: 2rem;
+    }
+    .logo img {
+      height: 50px;
+      width: auto;
+    }
+  </style>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+  <div class="logo"><img src="logo2.png"></div>
+  <div class="container">
+    <form id="registrationForm" action="/registration" method="post">
+      <p>REGISTER AS TUTOR</p>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label for="mobile">Mobile No:</label>
+        <input type="number" id="mobile" name="mobile" placeholder="Enter your mobile no" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      </div>
+      <button class="btn" type="submit">Register</button><br>
+      <a href="/s_registration"> Register as Student</a><br><br>
+      <a href="/login"> Login as Tutot</a>
+    </form>
+  </div>
+
+</body>
+
+</html>

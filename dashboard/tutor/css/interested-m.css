@@ -1,0 +1,68 @@
+/* Sub-menu-bar */
+.sub-type-bar {
+    width: 100%;
+}
+
+.stb-ul {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 0.2em;
+    /* display: flex;
+    justify-content: space-between; */
+    width: 100%;
+}
+
+.stb-ul a {
+    padding: 2vh 0;
+    text-align: center;
+    border: none;
+    overflow: hidden;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    font-size: 1.1em;
+    text-decoration: none;
+    color: #000;
+}
+
+
+.stb-ul a.active {
+    background-color: #19bdff;
+}
+
+/* Students-list */
+.ist-1 {
+    padding: 1.5em;
+    display: flex;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.std-prf, .std-prf img {
+    width: 6em;
+    height: 6em;
+    margin-right: 0.8em;
+}
+
+.req-btns {
+    margin: auto 1em auto auto;
+}
+
+.req-btns button {
+    padding: 0.5em 0.6em;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    background-color: #10d247;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.req-btns.done button {
+    padding: 0.5em 0.6em;
+    border: none;
+    color: #000;
+    background-color: #fff;
+    line-height: 30px;
+    text-align: start;
+    width: 350px;
+}
